@@ -25,7 +25,7 @@ class ProductManager {
 
         const newProduct = {
             id,
-            tittel,
+            tittle,
             description,
             price,
             thumbnail,
@@ -40,7 +40,7 @@ class ProductManager {
 
 
     getProduct() {
-
+        return this.#products
     }
 
     getProductById(id) {
@@ -55,4 +55,4 @@ class ProductManager {
 }
 
 
-module.export = ProductManager;
+module.exports = ProductManager;
